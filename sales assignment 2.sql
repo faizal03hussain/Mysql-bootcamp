@@ -1,0 +1,10 @@
+create database sales;
+use sales;
+CREATE TABLE orders (order_id INT,customer_id INT,order_date DATE,order_total DECIMAL(10,2));
+insert into orders values(1000,52001,'2016-07-03',500.25);
+insert into orders values(1001,52002,'2014-01-24',7800.5);
+insert into orders values(1002,52003,'2017-05-14',5500.25);
+insert into orders values(1003,52004,'2020-07-17',5060.25);
+insert into orders values(1004,52005,'2021-08-21',5000.235);
+alter table orders add primary key(order_id);
+select * from orders;
